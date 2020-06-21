@@ -1,0 +1,15 @@
+{
+    "jobs":[
+        {"id":0,"name":"UI Developer","location":"Chennai"},
+        {"id":1,"name":"PHP Developer","location":"Trichy"},
+        {"id":2,"name":"Python Developer","location":"Bangalore"},
+        {"id":3,"name":"Software Developer","location":"Salem"},
+        {"id":4,"name":"Java Developer","location":"Coimbatore"},
+        {"id":5,"name":"Go Developer","location":"Pune"}
+    ],
+    "employees":[
+        {"id":0,"name":"Bhuvana","salary":"3LPA"},
+        {"id":1,"name":"Pradeep","salary":"1LPA"},
+        {"id":2,"name":"Nithya","salary":"2LPA"}
+    ]
+}
