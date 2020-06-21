@@ -1,6 +1,8 @@
 # AutoUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+## CI Status
+
+![Auto UI Build and Publish](https://github.com/bhuvi-codes/auto-ui/workflows/Auto%20UI%20Build%20and%20Publish/badge.svg)
 
 ## Development server
 
