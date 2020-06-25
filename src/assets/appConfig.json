@@ -1,0 +1,25 @@
+{
+    "name": "Auto UI",
+    "pages": [
+        {
+            "name": "Jobs",
+            "fields": [
+                "id",
+                "name",
+                "location"
+            ],
+            "url": "/assets/sample/jobs.json",
+            "data": []
+        },
+        {
+            "name": "Employees",
+            "fields": [
+                "id",
+                "name",
+                "salary"
+            ],
+            "url": "/assets/sample/employees.json",
+            "data": []
+        }
+    ]
+}

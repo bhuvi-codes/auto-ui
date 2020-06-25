@@ -5,8 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class SessionService {
 
-  constructor() { }
+  constructor() {
+    this.user = sessionStorage.getItem("auto-ui-user")
+    if (this.user) {
+      this.loggedin = true;
+    }
+  }
 
   loggedin:boolean = false;
-  
+  user:string;
 }

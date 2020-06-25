@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary" *ngIf = "config">
+    <a class="navbar-brand" href="javascript:void(0)">{{config.name}}</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active" *ngFor = "let x of pages;let i=index">
+                <a class="nav-link" (click)="navigate(i)" href="javascript:void(0)">{{x.name}}</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" (click)="logout()" href="javascript:void(0)">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br><br><br><br>
+<div class="container" *ngIf = "pagedetail">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h3 class="text-center">{{pagedetail.name}} list</h3>
+            <table class="table table-bordered">
+                <thead class="text-secondary text-center">
+                    <tr>
+                        <th *ngFor = "let x of pagedetail.fields">{{x}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let d of pagedetail.data">
+                        <td *ngFor = "let x of pagedetail.fields">{{d[x]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

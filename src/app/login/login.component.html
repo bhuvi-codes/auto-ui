@@ -1,0 +1,25 @@
+<div class="container">
+    <br><br><br><br>    
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header text-center">Login</div>
+                <div class="card-body">
+                    <p class="text-success">{{msg}}</p>
+                    <p class="text-danger">{{errmsg}}</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" [(ngModel)]="user">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" [(ngModel)]="pass">
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" (click)="login()">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
